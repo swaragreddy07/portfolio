@@ -1,0 +1,580 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
+  font-family: Arial, sans-serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #068e83; /* Nice green shade */
+  margin-bottom: 9px;
+}
+
+.p,
+.pp {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  color: #333;
+  margin: 0px;
+  text-align: center;
+}
+
+.pp {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+.Avatar {
+  height: 25rem;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.img {
+  height: 3.6rem;
+  width: 3.6rem;
+  cursor: pointer;
+}
+
+.sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  gap: 2rem;
+}
+
+.img2 {
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.img:hover,
+.img2:hover {
+  transform: scale(1.1); /* Make it 10% bigger on hover */
+}
+
+.avatarC {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+.avatar {
+  width: 35rem;
+  height: 30rem;
+}
+
+.skill {
+  font-size: 3.4rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-areas:
+    "one two three four five"
+    "six seven eight nine ten";
+  row-gap: 2rem;
+  column-gap: 2rem;
+  align-items: center; /* Align items vertically */
+  justify-content: center;
+}
+
+.one {
+  grid-area: one;
+  justify-self: center;
+}
+
+.two {
+  grid-area: two;
+  justify-self: center;
+}
+.three {
+  grid-area: three;
+  justify-self: center;
+}
+.four {
+  grid-area: four;
+  justify-self: center;
+}
+.five {
+  grid-area: five;
+  justify-self: center;
+}
+
+.six {
+  grid-area: six;
+  justify-self: center;
+}
+
+.seven {
+  grid-area: seven;
+  justify-self: center;
+}
+
+.eight {
+  grid-area: eight;
+  justify-self: center;
+}
+
+.nine {
+  grid-area: nine;
+  justify-self: center;
+}
+
+.ten {
+  grid-area: ten;
+  justify-self: center;
+}
+
+.image_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  height: 11rem;
+  position: relative; /* Position the text relative to the container */
+  border-radius: 1rem; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  background-color: transparent;
+}
+
+.skill_html {
+  height: 9rem;
+  width: 9rem;
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.skill_python {
+  height: 9rem;
+  width: 9rem;
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.text_overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(
+    6,
+    171,
+    157,
+    0.8
+  ); /* Set the background color with some transparency */
+  color: white;
+  text-align: center;
+  border-radius: 0 0 0.9rem 0.9rem; /* Apply border radius to the bottom corners */
+  padding: 0.6rem;
+  margin-bottom: 0px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  overflow: hidden; /* Hide any overflowing content */
+  font-size: 1.2rem;
+
+  opacity: 0;
+}
+
+.image_container:hover .text_overlay {
+  opacity: 1; /* Visible on hover */
+}
+
+.One,
+.Two {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill_word {
+  height: 9rem;
+  width: 9rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.two {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.work {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sxp {
+  height: 55%;
+  width: 45%;
+  border-radius: 1.4rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  background-color: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for size and box shadow */
+  cursor: pointer;
+}
+
+.sxp:hover {
+  transform: scale(1.05); /* Increase size on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3),
+    /* Initial subtle shadow */ 8px 8px 16px rgba(13, 193, 178, 0.6); /* Single shadow on right and bottom */
+}
+
+.sample {
+  height: 55%;
+  width: 45%;
+  border-radius: 1.4rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  background-color: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for size and box shadow */
+  cursor: pointer;
+}
+
+.sample:hover {
+  transform: scale(1.05); /* Increase size on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3),
+    /* Initial subtle shadow */ 8px 8px 16px rgba(13, 193, 178, 0.6); /* Single shadow on right and bottom */
+}
+
+.line1,
+.line2,
+.line3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button,
+.Button {
+  padding: 0.75rem 3.5rem;
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: rgb(6, 197, 197); /* Set the background color to teal */
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Add a smooth transition for hover effect */
+}
+
+.button:hover {
+  background-color: #008080; /* Darker shade of teal on hover */
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Inherit text color from parent */
+}
+
+@media (max-width: 1035px) {
+  .skills {
+    grid-template-areas:
+      "one two three four"
+      "five six seven eight"
+      "nine nine ten ten";
+  }
+  .nine {
+    justify-self: end;
+  }
+  .ten {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 1000px) {
+  .line1,
+  .line2,
+  .line3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sxp,
+  .sample {
+    height: 100%;
+    width: 80%;
+  }
+}
+@media (max-width: 830px) {
+  .skills {
+    grid-template-areas:
+      "one two three"
+      "four five six"
+      "seven eight nine"
+      "ten ten ten";
+  }
+
+  .ten {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .skills {
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six"
+      "seven eight"
+      "nine ten";
+  }
+
+  .ten {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .skills {
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine"
+      "ten";
+  }
+
+  .skill {
+    font-size: 2.5rem;
+  }
+  .h1 {
+    font-size: 2.7rem;
+  }
+
+  .p,
+  .pp {
+    font-size: 1.7rem;
+  }
+
+  .avatar {
+    width: 30rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .h1 {
+    font-size: 2.3rem;
+  }
+
+  .work {
+    font-size: 2rem;
+  }
+  .skill {
+    font-size: 2.2rem;
+  }
+
+  .p {
+    font-size: 1.3rem;
+  }
+
+  .avatar {
+    width: 27rem;
+    height: 23rem;
+  }
+
+  .img {
+    height: 3.2rem;
+    width: 3.2rem;
+    cursor: pointer;
+  }
+
+  .img2 {
+    height: 2.6rem;
+    width: 2.6rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 440px) {
+  .h1 {
+    font-size: 2rem;
+  }
+  .work {
+    font-size: 1.8rem;
+  }
+  .skill {
+    font-size: 2rem;
+  }
+
+  .p {
+    font-size: 1.3rem;
+  }
+
+  .avatar {
+    width: 25rem;
+    height: 20rem;
+  }
+
+  .img {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+  }
+  .image_container {
+    width: 9rem;
+    height: 9rem;
+  }
+  .sxp,
+  .sample {
+    height: 100%;
+    width: 95%;
+  }
+  .skill_html {
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+
+  .skill_word {
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .skill_python {
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+}
+
+@media (max-width: 400px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+  .work {
+    font-size: 1.3rem;
+  }
+
+  .p {
+    font-size: 1.2rem;
+  }
+
+  .avatar {
+    width: 20rem;
+    height: 15rem;
+  }
+
+  .img {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 300px) {
+  .h1 {
+    font-size: 1.2rem;
+  }
+  .work {
+    font-size: 1rem;
+  }
+
+  .p {
+    font-size: 1rem;
+  }
+
+  .avatar {
+    width: 15rem;
+    height: 10rem;
+  }
+
+  .img {
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+  }
+  .img2 {
+    height: 2.1rem;
+    width: 2.1rem;
+    cursor: pointer;
+  }
+
+  .image_container {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .skill_html {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+
+  .skill_word {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .skill_python {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+  .skill {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .Avatar {
+    display: none;
+  }
+
+  .pp {
+    margin-bottom: 1rem;
+  }
+  .sec {
+    height: fit-content;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .button,
+  .Button {
+    width: 7rem;
+  }
+}

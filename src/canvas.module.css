@@ -1,0 +1,46 @@
+.h1{
+  color: #0374b5;
+}
+
+.h2{
+  color: #0374b5;
+}
+
+.p{
+  background-color: transparent;
+  color: #0374b5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+.button {
+  background-color: #0374b5;
+
+}
+
+.sxp {
+  height: 35%;
+  width: 80%;
+  border-radius: 1.4rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  background-color: transparent;
+
+}
+
+.button:hover {
+  background-color: #02598c; /* Change button background color on hover */
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media(max-width: 900px) {
+  .sxp{
+    width:99%;
+  }
+}
