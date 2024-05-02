@@ -6,6 +6,7 @@ import Blog from "./Blog.jsx"
 import Pressbook from "./Pressbook.jsx"
 import Canvas from "./Canvas.jsx"
 import Sample from "./Sample.jsx"
+import H5P from "./H5P.jsx"
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
         <Route exact path='/pressbook' Component={Pressbook}/>
         <Route exact path='/canvas' Component={Canvas}/>
         <Route exact path='/sample' Component={Sample}/>
+        <Route exact path='/H5P' Component={H5P}/>
         </Routes>
       
     </Router>

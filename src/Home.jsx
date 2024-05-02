@@ -19,7 +19,8 @@ import book from "./assets/book.png";
 import my_canvas from "./assets/my_canvas.png";
 import sample from "./assets/sample.png";
 import profile from "./assets/profile.png";
-import python from "./assets/python.png";
+import python from "./assets/python.jpeg";
+import landing from "./assets/landing.png";
 function Home() {
   function smart() {
     const url = "/smart";
@@ -27,6 +28,11 @@ function Home() {
   }
   function Sample() {
     const url = "/sample";
+    window.open(url, "_blank");
+  }
+
+  function Land() {
+    const url = "/H5P";
     window.open(url, "_blank");
   }
 
@@ -102,7 +108,7 @@ function Home() {
           <img className={styles.skill_html} src={laravel}></img>
         </div>
         <div className={`${styles.image_container} ${styles.ten}`}>
-          <span className={styles.text_overlay}>Python</span>
+          <span className={styles.text_overlay}>H5P</span>
           <img className={styles.skill_python} src={python}></img>
         </div>
       </div>
@@ -116,7 +122,8 @@ function Home() {
           <img onClick={Press} className={styles.sxp} src={book}></img>
           <img onClick={Canvas} className={styles.sxp} src={my_canvas}></img>
         </div>
-        <div className={styles.line3}>
+        <div className={styles.line2}>
+        <img onClick={Land} className={styles.sample} src={landing}></img>
           <img onClick={Sample} className={styles.sample} src={sample}></img>
         </div>
       </div>
